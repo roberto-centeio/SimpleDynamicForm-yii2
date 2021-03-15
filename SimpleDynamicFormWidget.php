@@ -32,7 +32,7 @@ class SimpleDynamicFormWidget extends Widget
 
         
 
-        AddMoreSimpleAsset::register($this->view);
+        SimpleDynamicFormAsset::register($this->view);
         $this->item = '<div class=\"add-more-item-simple\">' . $this->item . "</div>"; 
         $this->item = MinifyHelper::html($this->item);
         
