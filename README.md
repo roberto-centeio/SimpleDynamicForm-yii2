@@ -2,9 +2,7 @@
 Have the ability to create several dynamic forms in a simple way on yii2 with customized views and model validation. 
 
 # View.php
-<!-- language: php -->
-<div class="highlight highlight-PHP">
-<pre>
+```php
 <?= SimpleDynamicFormWidget::widget([
     "item" => $this->render("item", [
         'models' => $models,
@@ -26,12 +24,10 @@ Have the ability to create several dynamic forms in a simple way on yii2 with cu
         }"
     ])
 ?>
-</pre>
-</div>
+```
 
 # Item.php
-<!-- language: php -->
-<pre>
+```html
 <div class="card">
         <div class="card-body">
             <div class="row">
@@ -47,11 +43,10 @@ Have the ability to create several dynamic forms in a simple way on yii2 with cu
             </div>
         </div>
 </div>
-</pre>
+```
 
 # ModelSimple.php
-<!-- language: php -->
-<pre>
+```php
 <?php
 namespace app\models;
 use Yii;
@@ -83,11 +78,10 @@ class ModelSimple extends \yii\db\ActiveRecord
         return true;
     }
 }?>
-</pre>
+```
 
 # SimpleController.php
-
-<pre>
+```php
 <?php
     namespace app\controllers;
     use app/models/ModelSimple
@@ -109,4 +103,4 @@ class ModelSimple extends \yii\db\ActiveRecord
         }
     }
 ?>
-</pre>
+```
