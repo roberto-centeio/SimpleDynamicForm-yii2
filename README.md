@@ -88,7 +88,7 @@ class ModelSimple extends \yii\db\ActiveRecord
 
     class SimpleController extends Controller
     {
-        public function actionSave($id)
+        public function actionSave($id="")
         {
             $model = new ModelSimple()
             if (Yii::$app->request->isPost && $model->loads(Yii::$app->request->post("Model")) && $model->saves()){
